@@ -1,5 +1,4 @@
-#IM CUSTOM BRANCH :D
-print('firstTest')
+print("v.01")
 #! /usr/bin/env python
 #
 # Copyright 2021 Spotify AB
