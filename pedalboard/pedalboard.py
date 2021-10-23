@@ -1,4 +1,4 @@
-print("custom_branch")
+print("custom__branch")
 #! /usr/bin/env python
 #
 # Copyright 2021 Spotify AB
