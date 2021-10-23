@@ -276,7 +276,7 @@ class AudioProcessorParameter(object):
     and is (roughly) as performant as it should only run once per parameter.
     """
 
-    def __init__(self, plugin, parameter_name, search_steps: int = 1000):
+    def __init__(self, plugin, parameter_name, search_steps: int = 10):
         self.__plugin = plugin
         self.__parameter_name = parameter_name
 
