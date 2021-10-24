@@ -605,7 +605,12 @@ class ExternalPlugin(object):
         if not name.startswith("__"):
             parameter = self._get_parameter_by_python_name(name)
             if parameter:
-                parameter.raw_value = parameter.get_raw_value_for(value)
+                print('======>')
+                print('name', name)
+                print('value', value)
+                # print('parameter.get_raw_value_for(value)', parameter.get_raw_value_for(value))
+                # parameter.raw_value = parameter.get_raw_value_for(value)
+                parameter.raw_value = value
                 return
         super().__setattr__(name, value)
 
