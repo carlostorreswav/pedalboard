@@ -1,4 +1,4 @@
-print("___________v1.0")
+print("__v1.0")
 #! /usr/bin/env python
 #
 # Copyright 2021 Spotify AB
