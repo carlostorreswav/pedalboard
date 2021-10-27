@@ -574,10 +574,9 @@ class ExternalPlugin(object):
         return self.__python_parameter_cache__[cpp_parameter.name]
 
     def set_raw_value(self, name: str, raw_value: float):
-        if not name.startswith("__"):
-            parameter = self._get_parameter_by_python_name(name)
-            if parameter:
-                parameter.raw_value = raw_value
+        parameter = self._get_parameter_by_python_name(name)
+        if parameter:
+            parameter.raw_value = raw_value
 
     def __dir__(self):
         parameter_names = []
